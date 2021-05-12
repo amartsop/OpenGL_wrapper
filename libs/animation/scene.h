@@ -45,7 +45,6 @@ private:
     // Window properties
     const char* window_title = "Transperineal Prostate Biopsy";
     const float background_color[3] = {0.8588f, 0.8413f, 0.7921f}; // RGB
-    // const float background_color[3] = {0.0f, 0.0f, 0.0f}; // RGB
 
     // Display object
     Display m_display = Display(window_title);
@@ -70,10 +69,10 @@ private:
 
     /*********************** Shader ***********************/
     // Shader constants
-    const std::string object_shader_name = absolute_path + "/share/simpleShader";
+    const std::string m_scene_shader_name = absolute_path + "/share/simpleShader";
 
     // Shader object
-    Shader m_object_shader;
+    Shader m_scene_shader;
 
     // Initial light position
     glm::vec3 m_lightPos = glm::vec3(0.5f, 0.5f, 0.5f);

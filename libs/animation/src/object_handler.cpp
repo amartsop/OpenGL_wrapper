@@ -23,7 +23,7 @@ void ObjectHandler::update(double real_time)
         // Update objects' trajectories
 
         // Draw objects
-        m_primitive_objects.at(i).draw(5);
+        m_primitive_objects.at(i).draw();
     }
 
     // Loop through all imported objects 
@@ -54,13 +54,12 @@ void ObjectHandler::primitive_objects_generator(void)
     std::vector<std::string> shader_names = {plane_shader_name};
 
     // Generate objects texture names container
-    std::string plane_texture = m_absolute_path + "/objects/plane/plane.png";
-    std::vector<std::string> plane_texture_names = {plane_texture};
+    std::vector<glm::vec3> plane_color = {glm::vec3(0.82f, 0.9f, 0.97f)};
 
-    // Triangle position
+    // Plane position
     std::vector<glm::vec3> plane_pos = {glm::vec3(0.0f, 0.0f, -0.1f)};
 
-    // Triangle euler
+    // Plane euler
     std::vector<glm::vec3> plane_eul = {glm::vec3(0.0f, 0.0f, 0.0f)};
 
     // Resize primitive objects container
@@ -69,9 +68,18 @@ void ObjectHandler::primitive_objects_generator(void)
     // Initalize primitive objects
     for (size_t i = 0; i < m_primitive_objects.size(); i++)
     {
-        m_primitive_objects.at(i).initialize(i, plane_pos.at(i),
-            plane_eul.at(i), shader_names.at(i), plane_texture_names.at(i),
-            geometry, GL_DYNAMIC_DRAW);
+        // Generate primitive object properties
+        Object::PrimitiveObjProperties pop;
+        pop.id = i;
+        pop.pos = plane_pos.at(i);
+        pop.euler = plane_eul.at(i);
+        pop.shader_filename = shader_names.at(i);
+        pop.color = plane_color.at(i);
+        pop.geometry = geometry;
+        pop.draw_type = GL_DYNAMIC_DRAW;
+        
+        // Assign properties to object
+        m_primitive_objects.at(i).initialize(pop);
     }
 }
 
@@ -103,13 +111,26 @@ void ObjectHandler::imported_objects_generator(void)
     glm::vec3 needle_euler = glm::vec3(0.0f, 0.0f, 0.0f);
     std::vector<glm::vec3> euler_angles = {handle_euler, needle_euler};
 
+    // Generate objects shiness container
+    std::vector<float> shininess = {64.0f, 10.0f};
+
     // Resize imported objects container
     m_imported_objects.resize(positions.size());
 
     // Initalize imported objects
     for (size_t i = 0; i < m_imported_objects.size(); i++)
     {
-        m_imported_objects.at(i).initialize(i, positions.at(i), euler_angles.at(i),
-            shader_names.at(i), mesh_names.at(i), texture_names.at(i), GL_DYNAMIC_DRAW);
+        Object::ImportedObjProperties iop; 
+        iop.id = i;
+        iop.pos = positions.at(i);
+        iop.euler = euler_angles.at(i);
+        iop.shader_filename = shader_names.at(i);
+        iop.mesh_filename = mesh_names.at(i);
+        iop.texture_filename = texture_names.at(i);
+        iop.shininess = shininess.at(i);
+        iop.draw_type = GL_DYNAMIC_DRAW;
+
+        // Assign properties to object
+        m_imported_objects.at(i).initialize(iop);
     }
 }

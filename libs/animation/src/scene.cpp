@@ -11,7 +11,7 @@ Scene::Scene()
     m_callback_handler.set_camera(&m_camera);
 
     // Initialize shaders
-    m_object_shader.initialize(object_shader_name);
+    m_scene_shader.initialize(m_scene_shader_name);
 
     // Initialize object handler
     m_object_handler.initialize();
@@ -28,7 +28,7 @@ void Scene::update(double real_time, double delta_time)
     m_camera.update(delta_time);
 
     // Bind shader 
-    m_object_shader.bind();
+    m_scene_shader.bind();
 
     // Update setup
     update_setup();
@@ -48,19 +48,15 @@ void Scene::update(double real_time, double delta_time)
 void Scene::update_setup(void)
 {
     // Camera and light position
-    m_object_shader.set_vec3("viewPos", m_camera.get_camera_position());
-    m_object_shader.set_vec3("light.position", m_camera.get_camera_position());
+    m_scene_shader.set_vec3("viewPos", m_camera.get_camera_position());
+    m_scene_shader.set_vec3("light.position", m_lightPos);
 
     // Light properties
-    m_object_shader.set_vec3("light.ambient", 0.2f, 0.2f, 0.2f); 
-    m_object_shader.set_vec3("light.diffuse", 0.5f, 0.5f, 0.5f);
-    m_object_shader.set_vec3("light.specular", 1.0f, 1.0f, 1.0f);
-
-    // Material properties
-    m_object_shader.set_vec3("material.specular", 0.5f, 0.5f, 0.5f);
-    m_object_shader.set_float("material.shininess", 64.0f);
+    m_scene_shader.set_vec3("light.ambient", 0.2f, 0.2f, 0.2f); 
+    m_scene_shader.set_vec3("light.diffuse", 0.5f, 0.5f, 0.5f);
+    m_scene_shader.set_vec3("light.specular", 1.0f, 1.0f, 1.0f);
 
     // View and projection
-    m_object_shader.set_mat4("projection", m_camera.get_projection());
-    m_object_shader.set_mat4("view", m_camera.get_view());
+    m_scene_shader.set_mat4("projection", m_camera.get_projection());
+    m_scene_shader.set_mat4("view", m_camera.get_view());
 }

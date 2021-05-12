@@ -21,16 +21,17 @@ in vec2 TexCoords;
 uniform vec3 viewPos;
 uniform Material material;
 uniform Light light;
+
 uniform bool monochrome;
+uniform vec3 custom_color;
 
 
 void main()
 {
     vec3 color_g = texture(material.diffuse, TexCoords).rgb;
 
-    if(monochrome){
-        color_g = vec3(1.0f, 0.0f, 0.0f);
-    }
+    // Set custom color
+    if(monochrome){ color_g = custom_color; }
 
     // Ambient
     vec3 ambient = light.ambient * color_g;

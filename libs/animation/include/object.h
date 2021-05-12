@@ -23,25 +23,87 @@ public:
     // Draw object 
     void draw(bool wireframe=false);
 
-    // Draw object 
-    void draw(int color);
+    // // Draw object 
+    // void draw(int color);
 
     // Remove object
     void remove();
-    
-public:
 
-    // Set object properties (external mesh import)
-    void initialize(unsigned int id, const glm::vec3& pos,
-        const glm::vec3& euler, const std::string& shader_filename,
-        const std::string& mesh_filename, const std::string& texture_filename, 
-        GLenum draw_type=GL_STATIC_DRAW);
+    // Primitive object properties
+    struct  PrimitiveObjProperties{
+        // Identifier
+        unsigned int id;
+
+        // Object position
+        glm::vec3 pos;
+
+        // Object orientation
+        glm::vec3 euler;
+
+        // Object color
+        glm::vec3 color;
+
+        // Material shininess 
+        float shininess = 64.0f;
+
+        // Material shininess 
+        glm::vec3 specular = glm::vec3(0.5f, 0.5f, 0.5f);
+
+        // Shader filename
+        std::string shader_filename;
+
+        // Texture filename
+        std::string texture_filename;
+
+        // Geometry
+        Geometry* geometry;
+
+        // Draw type
+        GLenum draw_type;
+    };
+
+
+    // Imported object properties
+    struct ImportedObjProperties{
+
+        // Identifier
+        unsigned int id;
+
+        // Object position
+        glm::vec3 pos;
+
+        // Object orientation
+        glm::vec3 euler;
+
+        // Object color
+        glm::vec3 color=glm::vec3({0.0f, 0.0f, 0.0f});
+
+        // Material shininess 
+        float shininess = 64.0f;
+
+        // Material shininess 
+        glm::vec3 specular = glm::vec3(0.5f, 0.5f, 0.5f);
+
+        // Shader filename
+        std::string shader_filename;
+
+        // Texture filename
+        std::string texture_filename;
+
+        // Geometry
+        std::string mesh_filename;
+
+        // Draw type
+        GLenum draw_type;
+    };
+
+
+public:
+    // Set object properties (basic geometry mesh)
+    void initialize(const PrimitiveObjProperties& pop);
 
     // Set object properties (basic geometry mesh)
-    void initialize(unsigned int id, const glm::vec3& pos,
-        const glm::vec3& euler, const std::string& shader_filename,
-        const std::string& texture_filename, Geometry* geometry,
-        GLenum draw_type=GL_STATIC_DRAW);
+    void initialize(const ImportedObjProperties& pop);
 
 private:
     // Object ID
@@ -57,10 +119,22 @@ private:
     // Object mesh
     Mesh m_mesh;
 
-    // Objec texture
+    // Object texture
     Texture m_texture;
 
     // Object transform
     Transform m_transform;
+
+    // Custom color flag
+    bool m_color_flag = false;
+
+    // Custom color
+    glm::vec3 m_color;
+
+    // Material shininess 
+    float m_shininess;
+
+    // Material shininess 
+    glm::vec3 m_specular;
 };
 
