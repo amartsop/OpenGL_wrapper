@@ -88,7 +88,7 @@ GL/glext.h
 GL/glu.h
 -
 
-/home/thanos/Desktop/CollisionDetection/libs/animation/libs/glfw-3.1.2/deps/glad.c
+/home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/libs/animation/libs/glfw-3.1.2/deps/glad.c
 stdio.h
 -
 string.h
@@ -96,7 +96,7 @@ string.h
 glad/glad.h
 -
 
-/home/thanos/Desktop/CollisionDetection/libs/animation/libs/glfw-3.1.2/examples/heightmap.c
+/home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/libs/animation/libs/glfw-3.1.2/examples/heightmap.c
 stdlib.h
 -
 stdio.h

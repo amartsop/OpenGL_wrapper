@@ -62,10 +62,10 @@ RM = /opt/cmake-3.18.4-Linux-x86_64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/thanos/Desktop/CollisionDetection
+CMAKE_SOURCE_DIR = /home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/thanos/Desktop/CollisionDetection/build
+CMAKE_BINARY_DIR = /home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/build
 
 # Utility rule file for uninstall.
 
@@ -73,7 +73,7 @@ CMAKE_BINARY_DIR = /home/thanos/Desktop/CollisionDetection/build
 include libs/animation/libs/glfw-3.1.2/CMakeFiles/uninstall.dir/progress.make
 
 libs/animation/libs/glfw-3.1.2/CMakeFiles/uninstall:
-	cd /home/thanos/Desktop/CollisionDetection/build/libs/animation/libs/glfw-3.1.2 && /opt/cmake-3.18.4-Linux-x86_64/bin/cmake -P /home/thanos/Desktop/CollisionDetection/build/libs/animation/libs/glfw-3.1.2/cmake_uninstall.cmake
+	cd /home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/build/libs/animation/libs/glfw-3.1.2 && /opt/cmake-3.18.4-Linux-x86_64/bin/cmake -P /home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/build/libs/animation/libs/glfw-3.1.2/cmake_uninstall.cmake
 
 uninstall: libs/animation/libs/glfw-3.1.2/CMakeFiles/uninstall
 uninstall: libs/animation/libs/glfw-3.1.2/CMakeFiles/uninstall.dir/build.make
@@ -86,10 +86,10 @@ libs/animation/libs/glfw-3.1.2/CMakeFiles/uninstall.dir/build: uninstall
 .PHONY : libs/animation/libs/glfw-3.1.2/CMakeFiles/uninstall.dir/build
 
 libs/animation/libs/glfw-3.1.2/CMakeFiles/uninstall.dir/clean:
-	cd /home/thanos/Desktop/CollisionDetection/build/libs/animation/libs/glfw-3.1.2 && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
+	cd /home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/build/libs/animation/libs/glfw-3.1.2 && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
 .PHONY : libs/animation/libs/glfw-3.1.2/CMakeFiles/uninstall.dir/clean
 
 libs/animation/libs/glfw-3.1.2/CMakeFiles/uninstall.dir/depend:
-	cd /home/thanos/Desktop/CollisionDetection/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/thanos/Desktop/CollisionDetection /home/thanos/Desktop/CollisionDetection/libs/animation/libs/glfw-3.1.2 /home/thanos/Desktop/CollisionDetection/build /home/thanos/Desktop/CollisionDetection/build/libs/animation/libs/glfw-3.1.2 /home/thanos/Desktop/CollisionDetection/build/libs/animation/libs/glfw-3.1.2/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection /home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/libs/animation/libs/glfw-3.1.2 /home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/build /home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/build/libs/animation/libs/glfw-3.1.2 /home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/build/libs/animation/libs/glfw-3.1.2/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : libs/animation/libs/glfw-3.1.2/CMakeFiles/uninstall.dir/depend
 

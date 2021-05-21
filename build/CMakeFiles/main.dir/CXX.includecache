@@ -72,6 +72,10 @@ GLFW/glfw3.h
 geometry.h
 ../libs/animation/include/geometries/geometry.h
 
+../libs/animation/include/geometries/grid3D.h
+geometry.h
+../libs/animation/include/geometries/geometry.h
+
 ../libs/animation/include/indexed_model.h
 iostream
 -
@@ -161,6 +165,8 @@ geometries/geometry.h
 ../libs/animation/include/geometries/geometry.h
 geometries/grid2D.h
 ../libs/animation/include/geometries/grid2D.h
+geometries/grid3D.h
+../libs/animation/include/geometries/grid3D.h
 
 ../libs/animation/include/shader.h
 glad/glad.h
@@ -274,7 +280,7 @@ texture.h
 object_handler.h
 -
 
-/home/thanos/Desktop/CollisionDetection/main.cpp
+/home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/main.cpp
 cstdlib
 -
 iostream

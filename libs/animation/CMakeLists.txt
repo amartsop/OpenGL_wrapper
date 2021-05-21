@@ -22,6 +22,7 @@ add_library(animation STATIC
 	./src/trajectory_handler.cpp
 	./include/geometries/geometry.cpp
 	./include/geometries/grid2D.cpp
+	./include/geometries/grid3D.cpp
 )
 
 target_link_libraries(animation PRIVATE graphics)

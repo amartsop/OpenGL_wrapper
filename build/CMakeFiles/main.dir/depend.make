@@ -8,6 +8,7 @@ CMakeFiles/main.dir/main.cpp.o: ../libs/animation/include/display.h
 CMakeFiles/main.dir/main.cpp.o: ../libs/animation/include/filesystem.h
 CMakeFiles/main.dir/main.cpp.o: ../libs/animation/include/geometries/geometry.h
 CMakeFiles/main.dir/main.cpp.o: ../libs/animation/include/geometries/grid2D.h
+CMakeFiles/main.dir/main.cpp.o: ../libs/animation/include/geometries/grid3D.h
 CMakeFiles/main.dir/main.cpp.o: ../libs/animation/include/indexed_model.h
 CMakeFiles/main.dir/main.cpp.o: ../libs/animation/include/mesh.h
 CMakeFiles/main.dir/main.cpp.o: ../libs/animation/include/obj_loader.h

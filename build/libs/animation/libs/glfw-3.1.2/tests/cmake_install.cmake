@@ -1,4 +1,4 @@
-# Install script for directory: /home/thanos/Desktop/CollisionDetection/libs/animation/libs/glfw-3.1.2/tests
+# Install script for directory: /home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/libs/animation/libs/glfw-3.1.2/tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -21,13 +21,12 @@ public:
     Object() {};
 
     // Draw object 
-    void draw(bool wireframe=false);
-
-    // // Draw object 
-    // void draw(int color);
+    void draw();
 
     // Remove object
     void remove();
+
+public:
 
     // Primitive object properties
     struct  PrimitiveObjProperties{
@@ -48,6 +47,9 @@ public:
 
         // Material shininess 
         glm::vec3 specular = glm::vec3(0.5f, 0.5f, 0.5f);
+
+        // Wireframe flag 
+        bool wireframe = false;
 
         // Shader filename
         std::string shader_filename;
@@ -84,6 +86,9 @@ public:
         // Material shininess 
         glm::vec3 specular = glm::vec3(0.5f, 0.5f, 0.5f);
 
+        // Wireframe flag 
+        bool wireframe = false;
+
         // Shader filename
         std::string shader_filename;
 
@@ -96,7 +101,6 @@ public:
         // Draw type
         GLenum draw_type;
     };
-
 
 public:
     // Set object properties (basic geometry mesh)
@@ -136,5 +140,8 @@ private:
 
     // Material shininess 
     glm::vec3 m_specular;
+
+    // Wireframe flag
+    bool m_wireframe_flag;
 };
 

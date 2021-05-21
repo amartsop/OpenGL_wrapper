@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/animation.dir/include/geometries/geometry.cpp.o"
   "CMakeFiles/animation.dir/include/geometries/grid2D.cpp.o"
+  "CMakeFiles/animation.dir/include/geometries/grid3D.cpp.o"
   "CMakeFiles/animation.dir/src/callback_handler.cpp.o"
   "CMakeFiles/animation.dir/src/callback_setter.cpp.o"
   "CMakeFiles/animation.dir/src/camera.cpp.o"

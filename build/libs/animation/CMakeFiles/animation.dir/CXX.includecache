@@ -6,46 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../libs/animation/include/callback_handler.h
-glad/glad.h
--
-GLFW/glfw3.h
--
-iostream
--
-camera.h
-../libs/animation/include/camera.h
-
-../libs/animation/include/callback_setter.h
-glad/glad.h
--
-GLFW/glfw3.h
--
-iostream
--
-callback_handler.h
-../libs/animation/include/callback_handler.h
-
-../libs/animation/include/camera.h
-iostream
--
-glm/glm.hpp
--
-glm/gtx/transform.hpp
--
-glm/gtx/string_cast.hpp
--
-GLFW/glfw3.h
--
-
-../libs/animation/include/display.h
-glad/glad.h
--
-GLFW/glfw3.h
--
-iostream
--
-
 ../libs/animation/include/filesystem.h
 iostream
 -
@@ -69,6 +29,10 @@ GLFW/glfw3.h
 -
 
 ../libs/animation/include/geometries/grid2D.h
+geometry.h
+../libs/animation/include/geometries/geometry.h
+
+../libs/animation/include/geometries/grid3D.h
 geometry.h
 ../libs/animation/include/geometries/geometry.h
 
@@ -161,6 +125,8 @@ geometries/geometry.h
 ../libs/animation/include/geometries/geometry.h
 geometries/grid2D.h
 ../libs/animation/include/geometries/grid2D.h
+geometries/grid3D.h
+../libs/animation/include/geometries/grid3D.h
 
 ../libs/animation/include/shader.h
 glad/glad.h
@@ -244,37 +210,7 @@ stdint.h
 inttypes.h
 -
 
-/home/thanos/Desktop/CollisionDetection/libs/animation/scene.h
-iostream
--
-fstream
--
-vector
--
-glad/glad.h
--
-GLFW/glfw3.h
--
-filesystem.h
--
-display.h
--
-callback_setter.h
--
-callback_handler.h
--
-mesh.h
--
-shader.h
--
-transform.h
--
-texture.h
--
+/home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/libs/animation/src/object_handler.cpp
 object_handler.h
 -
-
-/home/thanos/Desktop/CollisionDetection/libs/animation/src/scene.cpp
-../scene.h
-/home/thanos/Desktop/CollisionDetection/libs/animation/scene.h
 

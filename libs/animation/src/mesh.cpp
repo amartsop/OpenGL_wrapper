@@ -1,4 +1,4 @@
-#include <mesh.h>
+#include "../include/mesh.h"
 
 // Assign mesh (for imported file)
 void Mesh::assign(const std::string& filename, GLenum draw_type)

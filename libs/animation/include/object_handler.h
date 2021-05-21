@@ -13,6 +13,7 @@
 #include "shader.h"
 #include "geometries/geometry.h"
 #include "geometries/grid2D.h"
+#include "geometries/grid3D.h"
 
 class ObjectHandler {
 

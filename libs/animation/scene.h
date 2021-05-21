@@ -44,8 +44,9 @@ private:
     /******************* Setup display *****************/
     // Window properties
     const char* window_title = "Transperineal Prostate Biopsy";
-    const float background_color[3] = {0.8588f, 0.8413f, 0.7921f}; // RGB
-
+    // const float background_color[3] = {0.8588f, 0.8413f, 0.7921f}; // RGB
+    const float background_color[3] = {0.82f, 0.8f, 0.9f}; // RGB
+        
     // Display object
     Display m_display = Display(window_title);
         
@@ -75,5 +76,5 @@ private:
     Shader m_scene_shader;
 
     // Initial light position
-    glm::vec3 m_lightPos = glm::vec3(0.5f, 0.5f, 0.5f);
+    glm::vec3 m_light_pos = glm::vec3(1.0f, 0.0f, 1.0f);
 };

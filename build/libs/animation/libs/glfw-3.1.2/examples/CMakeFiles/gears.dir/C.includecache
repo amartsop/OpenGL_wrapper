@@ -60,7 +60,7 @@ GL/glext.h
 GL/glu.h
 -
 
-/home/thanos/Desktop/CollisionDetection/libs/animation/libs/glfw-3.1.2/examples/gears.c
+/home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/libs/animation/libs/glfw-3.1.2/examples/gears.c
 math.h
 -
 stdlib.h

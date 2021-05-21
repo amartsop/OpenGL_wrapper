@@ -1,4 +1,4 @@
-#include "../include/object.h"
+#include <object.h>
 
 // Set object properties (basic geometry mesh)
 void Object::initialize(const PrimitiveObjProperties& pop)
@@ -28,8 +28,13 @@ void Object::initialize(const PrimitiveObjProperties& pop)
     m_shininess = pop.shininess;
     m_specular = pop.specular;
 
+    // Wireframe flag
+    m_wireframe_flag = pop.wireframe;
+
     // Generate object's mesh
     m_mesh.assign(pop.geometry, pop.draw_type);
+
+
 }
 
 
@@ -61,12 +66,15 @@ void Object::initialize(const ImportedObjProperties& iop)
     m_shininess = iop.shininess;
     m_specular = iop.specular;
 
+    // Wireframe flag
+    m_wireframe_flag = iop.wireframe;
+
     // Generate object's mesh
     m_mesh.assign(iop.mesh_filename, iop.draw_type);
 }
 
 
-void Object::draw(bool wireframe)
+void Object::draw()
 {
     // Handle transform 
     m_transform.setPos(m_pos);
@@ -87,7 +95,7 @@ void Object::draw(bool wireframe)
 
     // Check for wireframe 
     GLenum draw_type;
-    wireframe ?  (draw_type = GL_LINE) : (draw_type = GL_FILL);
+    m_wireframe_flag ?  (draw_type = GL_LINE) : (draw_type = GL_FILL);
     glPolygonMode(GL_FRONT_AND_BACK, draw_type);
 
     // Draw mesh

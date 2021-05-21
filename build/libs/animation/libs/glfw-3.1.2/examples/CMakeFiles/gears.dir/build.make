@@ -62,10 +62,10 @@ RM = /opt/cmake-3.18.4-Linux-x86_64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/thanos/Desktop/CollisionDetection
+CMAKE_SOURCE_DIR = /home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/thanos/Desktop/CollisionDetection/build
+CMAKE_BINARY_DIR = /home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/build
 
 # Include any dependencies generated for this target.
 include libs/animation/libs/glfw-3.1.2/examples/CMakeFiles/gears.dir/depend.make
@@ -78,16 +78,16 @@ include libs/animation/libs/glfw-3.1.2/examples/CMakeFiles/gears.dir/flags.make
 
 libs/animation/libs/glfw-3.1.2/examples/CMakeFiles/gears.dir/gears.c.o: libs/animation/libs/glfw-3.1.2/examples/CMakeFiles/gears.dir/flags.make
 libs/animation/libs/glfw-3.1.2/examples/CMakeFiles/gears.dir/gears.c.o: ../libs/animation/libs/glfw-3.1.2/examples/gears.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thanos/Desktop/CollisionDetection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object libs/animation/libs/glfw-3.1.2/examples/CMakeFiles/gears.dir/gears.c.o"
-	cd /home/thanos/Desktop/CollisionDetection/build/libs/animation/libs/glfw-3.1.2/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/gears.dir/gears.c.o -c /home/thanos/Desktop/CollisionDetection/libs/animation/libs/glfw-3.1.2/examples/gears.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object libs/animation/libs/glfw-3.1.2/examples/CMakeFiles/gears.dir/gears.c.o"
+	cd /home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/build/libs/animation/libs/glfw-3.1.2/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/gears.dir/gears.c.o -c /home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/libs/animation/libs/glfw-3.1.2/examples/gears.c
 
 libs/animation/libs/glfw-3.1.2/examples/CMakeFiles/gears.dir/gears.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gears.dir/gears.c.i"
-	cd /home/thanos/Desktop/CollisionDetection/build/libs/animation/libs/glfw-3.1.2/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thanos/Desktop/CollisionDetection/libs/animation/libs/glfw-3.1.2/examples/gears.c > CMakeFiles/gears.dir/gears.c.i
+	cd /home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/build/libs/animation/libs/glfw-3.1.2/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/libs/animation/libs/glfw-3.1.2/examples/gears.c > CMakeFiles/gears.dir/gears.c.i
 
 libs/animation/libs/glfw-3.1.2/examples/CMakeFiles/gears.dir/gears.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gears.dir/gears.c.s"
-	cd /home/thanos/Desktop/CollisionDetection/build/libs/animation/libs/glfw-3.1.2/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thanos/Desktop/CollisionDetection/libs/animation/libs/glfw-3.1.2/examples/gears.c -o CMakeFiles/gears.dir/gears.c.s
+	cd /home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/build/libs/animation/libs/glfw-3.1.2/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/libs/animation/libs/glfw-3.1.2/examples/gears.c -o CMakeFiles/gears.dir/gears.c.s
 
 # Object files for target gears
 gears_OBJECTS = \
@@ -109,8 +109,8 @@ libs/animation/libs/glfw-3.1.2/examples/gears: /usr/lib/x86_64-linux-gnu/libXxf8
 libs/animation/libs/glfw-3.1.2/examples/gears: /usr/lib/x86_64-linux-gnu/libXcursor.so
 libs/animation/libs/glfw-3.1.2/examples/gears: /usr/lib/x86_64-linux-gnu/libGL.so
 libs/animation/libs/glfw-3.1.2/examples/gears: libs/animation/libs/glfw-3.1.2/examples/CMakeFiles/gears.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/thanos/Desktop/CollisionDetection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable gears"
-	cd /home/thanos/Desktop/CollisionDetection/build/libs/animation/libs/glfw-3.1.2/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gears.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable gears"
+	cd /home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/build/libs/animation/libs/glfw-3.1.2/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gears.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 libs/animation/libs/glfw-3.1.2/examples/CMakeFiles/gears.dir/build: libs/animation/libs/glfw-3.1.2/examples/gears
@@ -118,10 +118,10 @@ libs/animation/libs/glfw-3.1.2/examples/CMakeFiles/gears.dir/build: libs/animati
 .PHONY : libs/animation/libs/glfw-3.1.2/examples/CMakeFiles/gears.dir/build
 
 libs/animation/libs/glfw-3.1.2/examples/CMakeFiles/gears.dir/clean:
-	cd /home/thanos/Desktop/CollisionDetection/build/libs/animation/libs/glfw-3.1.2/examples && $(CMAKE_COMMAND) -P CMakeFiles/gears.dir/cmake_clean.cmake
+	cd /home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/build/libs/animation/libs/glfw-3.1.2/examples && $(CMAKE_COMMAND) -P CMakeFiles/gears.dir/cmake_clean.cmake
 .PHONY : libs/animation/libs/glfw-3.1.2/examples/CMakeFiles/gears.dir/clean
 
 libs/animation/libs/glfw-3.1.2/examples/CMakeFiles/gears.dir/depend:
-	cd /home/thanos/Desktop/CollisionDetection/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/thanos/Desktop/CollisionDetection /home/thanos/Desktop/CollisionDetection/libs/animation/libs/glfw-3.1.2/examples /home/thanos/Desktop/CollisionDetection/build /home/thanos/Desktop/CollisionDetection/build/libs/animation/libs/glfw-3.1.2/examples /home/thanos/Desktop/CollisionDetection/build/libs/animation/libs/glfw-3.1.2/examples/CMakeFiles/gears.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection /home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/libs/animation/libs/glfw-3.1.2/examples /home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/build /home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/build/libs/animation/libs/glfw-3.1.2/examples /home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/build/libs/animation/libs/glfw-3.1.2/examples/CMakeFiles/gears.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : libs/animation/libs/glfw-3.1.2/examples/CMakeFiles/gears.dir/depend
 

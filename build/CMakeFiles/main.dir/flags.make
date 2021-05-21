@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/thanos/Desktop/CollisionDetection/./include -I/home/thanos/Desktop/CollisionDetection/libs/animation -I/home/thanos/Desktop/CollisionDetection/libs/animation/include -I/home/thanos/Desktop/CollisionDetection/libs/animation/libs
+CXX_INCLUDES = -I/home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/./include -I/home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/libs/animation -I/home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/libs/animation/include -I/home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/libs/animation/libs
 
 CXX_FLAGS = -Os -O3 -DNDEBUG -std=gnu++17
 

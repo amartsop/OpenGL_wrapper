@@ -62,10 +62,10 @@ RM = /opt/cmake-3.18.4-Linux-x86_64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/thanos/Desktop/CollisionDetection
+CMAKE_SOURCE_DIR = /home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/thanos/Desktop/CollisionDetection/build
+CMAKE_BINARY_DIR = /home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/build
 
 # Include any dependencies generated for this target.
 include libs/animation/libs/glfw-3.1.2/examples/CMakeFiles/wave.dir/depend.make
@@ -78,16 +78,16 @@ include libs/animation/libs/glfw-3.1.2/examples/CMakeFiles/wave.dir/flags.make
 
 libs/animation/libs/glfw-3.1.2/examples/CMakeFiles/wave.dir/wave.c.o: libs/animation/libs/glfw-3.1.2/examples/CMakeFiles/wave.dir/flags.make
 libs/animation/libs/glfw-3.1.2/examples/CMakeFiles/wave.dir/wave.c.o: ../libs/animation/libs/glfw-3.1.2/examples/wave.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thanos/Desktop/CollisionDetection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object libs/animation/libs/glfw-3.1.2/examples/CMakeFiles/wave.dir/wave.c.o"
-	cd /home/thanos/Desktop/CollisionDetection/build/libs/animation/libs/glfw-3.1.2/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/wave.dir/wave.c.o -c /home/thanos/Desktop/CollisionDetection/libs/animation/libs/glfw-3.1.2/examples/wave.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object libs/animation/libs/glfw-3.1.2/examples/CMakeFiles/wave.dir/wave.c.o"
+	cd /home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/build/libs/animation/libs/glfw-3.1.2/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/wave.dir/wave.c.o -c /home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/libs/animation/libs/glfw-3.1.2/examples/wave.c
 
 libs/animation/libs/glfw-3.1.2/examples/CMakeFiles/wave.dir/wave.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wave.dir/wave.c.i"
-	cd /home/thanos/Desktop/CollisionDetection/build/libs/animation/libs/glfw-3.1.2/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thanos/Desktop/CollisionDetection/libs/animation/libs/glfw-3.1.2/examples/wave.c > CMakeFiles/wave.dir/wave.c.i
+	cd /home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/build/libs/animation/libs/glfw-3.1.2/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/libs/animation/libs/glfw-3.1.2/examples/wave.c > CMakeFiles/wave.dir/wave.c.i
 
 libs/animation/libs/glfw-3.1.2/examples/CMakeFiles/wave.dir/wave.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wave.dir/wave.c.s"
-	cd /home/thanos/Desktop/CollisionDetection/build/libs/animation/libs/glfw-3.1.2/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thanos/Desktop/CollisionDetection/libs/animation/libs/glfw-3.1.2/examples/wave.c -o CMakeFiles/wave.dir/wave.c.s
+	cd /home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/build/libs/animation/libs/glfw-3.1.2/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/libs/animation/libs/glfw-3.1.2/examples/wave.c -o CMakeFiles/wave.dir/wave.c.s
 
 # Object files for target wave
 wave_OBJECTS = \
@@ -109,8 +109,8 @@ libs/animation/libs/glfw-3.1.2/examples/wave: /usr/lib/x86_64-linux-gnu/libXxf86
 libs/animation/libs/glfw-3.1.2/examples/wave: /usr/lib/x86_64-linux-gnu/libXcursor.so
 libs/animation/libs/glfw-3.1.2/examples/wave: /usr/lib/x86_64-linux-gnu/libGL.so
 libs/animation/libs/glfw-3.1.2/examples/wave: libs/animation/libs/glfw-3.1.2/examples/CMakeFiles/wave.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/thanos/Desktop/CollisionDetection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable wave"
-	cd /home/thanos/Desktop/CollisionDetection/build/libs/animation/libs/glfw-3.1.2/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/wave.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable wave"
+	cd /home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/build/libs/animation/libs/glfw-3.1.2/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/wave.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 libs/animation/libs/glfw-3.1.2/examples/CMakeFiles/wave.dir/build: libs/animation/libs/glfw-3.1.2/examples/wave
@@ -118,10 +118,10 @@ libs/animation/libs/glfw-3.1.2/examples/CMakeFiles/wave.dir/build: libs/animatio
 .PHONY : libs/animation/libs/glfw-3.1.2/examples/CMakeFiles/wave.dir/build
 
 libs/animation/libs/glfw-3.1.2/examples/CMakeFiles/wave.dir/clean:
-	cd /home/thanos/Desktop/CollisionDetection/build/libs/animation/libs/glfw-3.1.2/examples && $(CMAKE_COMMAND) -P CMakeFiles/wave.dir/cmake_clean.cmake
+	cd /home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/build/libs/animation/libs/glfw-3.1.2/examples && $(CMAKE_COMMAND) -P CMakeFiles/wave.dir/cmake_clean.cmake
 .PHONY : libs/animation/libs/glfw-3.1.2/examples/CMakeFiles/wave.dir/clean
 
 libs/animation/libs/glfw-3.1.2/examples/CMakeFiles/wave.dir/depend:
-	cd /home/thanos/Desktop/CollisionDetection/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/thanos/Desktop/CollisionDetection /home/thanos/Desktop/CollisionDetection/libs/animation/libs/glfw-3.1.2/examples /home/thanos/Desktop/CollisionDetection/build /home/thanos/Desktop/CollisionDetection/build/libs/animation/libs/glfw-3.1.2/examples /home/thanos/Desktop/CollisionDetection/build/libs/animation/libs/glfw-3.1.2/examples/CMakeFiles/wave.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection /home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/libs/animation/libs/glfw-3.1.2/examples /home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/build /home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/build/libs/animation/libs/glfw-3.1.2/examples /home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/build/libs/animation/libs/glfw-3.1.2/examples/CMakeFiles/wave.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : libs/animation/libs/glfw-3.1.2/examples/CMakeFiles/wave.dir/depend
 

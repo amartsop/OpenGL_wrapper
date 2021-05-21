@@ -62,17 +62,17 @@ GL/glext.h
 GL/glu.h
 -
 
-/home/thanos/Desktop/CollisionDetection/libs/animation/libs/glfw-3.1.2/deps/getopt.c
+/home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/libs/animation/libs/glfw-3.1.2/deps/getopt.c
 getopt.h
-/home/thanos/Desktop/CollisionDetection/libs/animation/libs/glfw-3.1.2/deps/getopt.h
+/home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/libs/animation/libs/glfw-3.1.2/deps/getopt.h
 stddef.h
 -
 string.h
 -
 
-/home/thanos/Desktop/CollisionDetection/libs/animation/libs/glfw-3.1.2/deps/getopt.h
+/home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/libs/animation/libs/glfw-3.1.2/deps/getopt.h
 
-/home/thanos/Desktop/CollisionDetection/libs/animation/libs/glfw-3.1.2/tests/events.c
+/home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/libs/animation/libs/glfw-3.1.2/tests/events.c
 GLFW/glfw3.h
 -
 stdio.h
@@ -86,5 +86,5 @@ string.h
 locale.h
 -
 getopt.h
-/home/thanos/Desktop/CollisionDetection/libs/animation/libs/glfw-3.1.2/tests/getopt.h
+/home/thanos/Documents/PhDDevelopment/Physics/TissueModelling/CollisionDetection/libs/animation/libs/glfw-3.1.2/tests/getopt.h
 
